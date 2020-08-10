@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+  font-family: Gill Sans Extrabold, sans-serif;
+}
+.cyanOnFusciaOnIndigo {
+  color: rgb(34, 153, 233);
+  background-color: midnightblue;
+  border-color: #C71585;
+}
+
+.cyanOnFuscia {
+  color: rgb(34, 153, 233);
+  background-color: #C71585;
+}
+.wtDbBtn {
+  color: white;
+  background-color:midnightblue;
+}
+.dbDrBtn {
+    color: midnightblue;
+    background-color: #C71585;
+  }
