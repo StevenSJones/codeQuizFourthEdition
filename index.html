@@ -4,56 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!--related to screen compatability-->
-    <title>The Coding Quiz</title>
-    <link rel="stylesheet" href="style.css" />
-    <!--link to the css style sheet-->
+    <!--link to bootstrap-->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>codeQuiz</title>
   </head>
-  <body>
-    <!--Below here will be the first (top) of three card sections on the page.-->
-    <div class="cyanOnFuscia">
+  <link rel="stylesheet" href="style.css" />
+<!--I learned that in one off situations that it is simpler to to put javascript directly in an event handler like below. The page loads whether or not you respond Please tell me if this is so?-->
+  <body style="height: 100%;">
+    <div class="whiteOnFuscia">
       <h1>Click below to begin the codeQuiz</h1>
-      <button class="wtDbBtn">Start Quiz</button>
+      <button id="startquiz"; class = "dbDrBtn";onclick="startQuiz()">Start Quiz</button>
       <hr />
     </div>
-    <!--Below here will be the second of three card sections on the page.-->
+
     <div class="cyanOnFusciaOnIndigo">
-      <!--Below here will be the instructions and the timer display.-->
-      <p>Press "Start Quiz" to start answering questions!</p>
-      <p>Time Remaining: 0</p>
-      <!--Below here will be the input section on the page followed by the submit button.-->
-      <label></label><br />
-      <input />
-      <label>Answer 1</label><br />
-      <input />
-      <label>Answer 2</label><br />
-      <input />
-      <label>Answer 3</label><br />
-      <input />
-      <label>Answer 4</label><br />
-      <button class="dbDrBtn">Submit Answer</button>
+      <p id="question">Press "Start Quiz" to start answering questions!</p>
+      <p id="timer">Time Remaining: 0</p>
+
+      <label id="questionNum"></label> <br />
+      <input type="radio" name="answer" value="question1" />
+      <label id="q1">Answer 1</label> <br />
+      <input type="radio" name="answer" value="question2" />
+      <label id="q2">Answer 2</label> <br />
+      <input type="radio" name="answer" value="question3" />
+      <label id="q3">Answer 3</label> <br />
+      <input type="radio" name="answer" value="question4" />
+      <label id="q4">Answer 4</label> <br />
+
+      <button class = "dbDrBtn"; onclick="answer()">Submit Answer</button>
     </div>
-    <!--Below here will be the third (bottom) of three card sections on the page.-->
-    <div class="cyanOnFuscia">
+
+    <div class="whiteOnFuscia adultCenter">
       <h2>High Scores</h2>
-      <!--this holds the text denoting "High Scores"-->
-      <label>Your Score: 0</label
-      ><!--this holds the text denoting "High Scores"-->
+
+      <label id="score">Your Score: 0</label>
       <br />
       Initials:
-      <input /><!--This holds the initials of the user inputting a high score-->
-      <button class="wtDbBtn">Submit</button>
+      <input type="text" name="initials" id="initials" />
+      <button class = "dbDrBtn"; onclick="submitScore()">Submit</button>
 
-      <!--The table below hold the high scores.-->
-      <table>
+      <table class = "kidCenter" border="1" id="scoreTable">
         <tr>
-          <th>Initials</th><!--This is the header for the table for the Initials-->
-          <th>Score</th><!--This is the header for the table for the Score-->
+          <th>Initials</th>
+          <th>Score</th>
         </tr>
       </table>
     </div>
 
     <script src="script.js"></script>
-    <!--link to the script.js javascript file-->
   </body>
 </html>

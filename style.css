@@ -1,22 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
 body {
+  margin: 0;
+  padding: 0;
   text-align: center;
   font-family: Gill Sans Extrabold, sans-serif;
+}
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dbDrBtn {
+  color: midnightblue;
+  background-color: #c71585;
 }
 .cyanOnFusciaOnIndigo {
   color: rgb(34, 153, 233);
   background-color: midnightblue;
-  border-color: #C71585;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 30px 40px;
+}
+/* removed the margin because it adversely affected the table */
+.OnFuscia {
+  color: rgb(34, 153, 233);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  font-size: 18px;
+  max-width: 100%;
+  padding: 30px 40px;
 }
 
-.cyanOnFuscia {
-  color: rgb(34, 153, 233);
-  background-color: #C71585;
+/* .using a parent element to wrap around a child so i can use place items:center  */
+.adultCenter{
+  width: 100%;
+  display: grid;
+  place-items: center;
+
 }
-.wtDbBtn {
-  color: white;
-  background-color:midnightblue;
+/* .using a child element to go inside a parent so i can use place items:center and fix my table which was pushed far left */
+.kidCenter{
+width: 75%;
+height: 50px;
+line-height: 40px;
+text-align: center;
 }
-.dbDrBtn {
-    color: midnightblue;
-    background-color: #C71585;
-  }
