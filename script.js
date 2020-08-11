@@ -1,62 +1,59 @@
 // list of all questions, choices, and answers in the form of an array of objects.
 var questions = [
-    {
-      title: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
-    },
-    {
-      title: "The condition in an if / else statement is enclosed within ____.",
-      choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-      answer: "parentheses"
-    },
-    {
-      title: "Arrays in JavaScript can be used to store ____.",
-      choices: [
-        "numbers and strings",
-        "other arrays",
-        "booleans",
-        "all of the above"
-      ],
-      answer: "all of the above"
-    },
-    {
-      title:
-        "String values must be enclosed within ____ when being assigned to variables.",
-      choices: ["commas", "curly brackets", "quotes", "parentheses"],
-      answer: "quotes"
-    },
-    {
-      title:
-        "A very useful tool used during development and debugging for printing content to the debugger is:",
-      choices: ["JavaScript", "terminal / bash", "for loops", "console.log"],
-      answer: "console.log"
-    }
-  ];
-  
-  /*inside setInterval is the function alertMe and the unit of time * 1000 because unit of time for setInterval is milliseconds*/
-  //initialize the timerCount and set it to 75
-  var timerCounter = 75;
-  function alertMe() {
-    
-  if (timerCounter > 0) {
-      timerCounter -= 1;//using decriment to 
-      document.querySelector("#timer").innerHTML =//this is where we grab the id with the query selecrtor
-        "Time Remaining: " + timerCounter;//display on the page how much time remaining 
-    }
-          // If timer has already gone 2 times, then stop timer
-          else {
-              //The clearInterval() method stops the executions of the function specified in the setInterval() method
-              questionIndex = questions.length;//going to last question and then 
-              displayCurrentQuestion();
-              clearInterval(myTimer);
-    }
+  {
+    title: "Commonly used data types DO NOT include:",
+    choices: ["strings", "booleans", "alerts", "numbers"],
+    answer: "alerts"
+  },
+  {
+    title: "The condition in an if / else statement is enclosed within ____.",
+    choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
+    answer: "parentheses"
+  },
+  {
+    title: "Arrays in JavaScript can be used to store ____.",
+    choices: [
+      "numbers and strings",
+      "other arrays",
+      "booleans",
+      "all of the above"
+    ],
+    answer: "all of the above"
+  },
+  {
+    title:
+      "String values must be enclosed within ____ when being assigned to variables.",
+    choices: ["commas", "curly brackets", "quotes", "parentheses"],
+    answer: "quotes"
+  },
+  {
+    title:
+      "A very useful tool used during development and debugging for printing content to the debugger is:",
+    choices: ["JavaScript", "terminal / bash", "for loops", "console.log"],
+    answer: "console.log"
   }
+];
+  
+/*inside setInterval is the function alertMe and the unit of time * 1000 because unit of time for setInterval is milliseconds*/
+//initialize the timerCount and set it to 75
+var timerCounter = 75;
+function alertMe() { 
+  if (timerCounter > 0) {//if the counter is less than 75
+    timerCounter -= 1;//-= means it is = to itself minus 1. Runs first and now timeCounter = 74...73...72 using decriment to take one from time counter
+    document.querySelector("#timer").innerHTML =//this is where we grab the id with the query selector
+    "Time Remaining: " + timerCounter;//display timer on the page how much time remaining 
+  } else {// If timergets to 0 then run this function
+    //The clearInterval() method stops the executions of the function specified in the setInterval() method
+    questionIndex = questions.length;// it equals 5 to start. // If timer has already gone 2 times, then stop timer...
+    displayCurrentQuestion();
+    clearInterval(myTimer);//clearInterval will stop the timer
+  }
+}
    
   var questionIndex = 0;
   var wrongQuestions = [];
   var rightQuestions = [];
-  var myTimer;
+  var myTimer;//instantiates myTimer
    
   //main function in which work is done on the data
   function startQuiz() {
@@ -65,17 +62,18 @@ var questions = [
     questionIndex = 0;
     document.querySelector("#startquiz").innerHTML = "Start Over";
     timerCounter = 75;
-    clearInterval(myTimer);
-    myTimer = setInterval(alertMe, 1000);
+    clearInterval(myTimer);// making myTimer is set to 0 prior to adding to it
+    myTimer = setInterval(alertMe, 1000);//clearInterval will set the timer
+  
     displayCurrentQuestion();
   }
    //this is the function to display the current question.
    //it goes through the questions array once for every element in the array by grabbing the item by using the query selector.
   function displayCurrentQuestion() {//this is the work done on the data IF less than the length of the array
     if (questionIndex < questions.length) {
-      document.querySelector("#timer").innerHTML =
-        "Time Remaining: " + timerCounter;
-      document.querySelector("#questionNum").innerHTML =
+      /*document.querySelector("#timer").innerHTML =
+        "Time Remaining: " + timerCounter;*/
+      document.querySelector("#questionNum").innerHTML =//document.querySelector is a way of talking about HTML elements in .js
         "Question " + (questionIndex + 1) + ":";
       document.querySelector("#question").innerHTML =
         questions[questionIndex].title;
@@ -90,9 +88,9 @@ var questions = [
     } else {
       
       document.querySelector("#questionNum").innerHTML = "";
-      if (wrongQuestions.length == 0) {
+      if (wrongQuestions.length === 0) {
         document.querySelector("#question").innerHTML =
-          "Your Score: " + rightQuestions.length + "/" + questions.length;
+          "Your Score: " + rightQuestions.length + "/" + questions.length;//where it once had the question it will now diaplay the score
       } else {//grab elements and change text to print score
         document.querySelector("#question").innerHTML =
           "Your Score: " +
@@ -112,13 +110,13 @@ var questions = [
     }
   }
    
-  function answer() {
-    var radios = document.querySelector("#answer");//this sets/creates the var radios and assigns it a value of answer
+  function answer() {//logic behind the questions
+    var radios = document.querySelectorAll(".answer");//this sets/creates the var radios and assigns it a value of answer
     for (let i = 0; i < radios.length; i++) {
       if (radios[i].checked) {
-        let answer = questions[questionIndex].answer;
-        let choice = questions[questionIndex].choices[i];
-        if (choice == answer) {
+        const answer = questions[questionIndex].answer;
+        const choice = questions[questionIndex].choices[i];
+        if (choice === answer) {
           alert("Correct");
           rightQuestions.push(questionIndex);
         } else {
