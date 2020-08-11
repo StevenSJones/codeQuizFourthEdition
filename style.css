@@ -30,7 +30,7 @@ body {
   padding: 30px 40px;
 }
 /* removed the margin because it adversely affected the table */
-.OnFuscia {
+.whiteOnFuscia {
   color: rgb(34, 153, 233);
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
