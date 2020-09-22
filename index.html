@@ -17,17 +17,24 @@
     <title>codeQuiz</title>
   </head>
   <link rel="stylesheet" href="style.css" />
-<!--I learned that in one off situations that it is simpler to to put javascript directly in an event handler like below. The page loads whether or not you respond Please tell me if this is so?-->
-  <body style="height: 100%;">
-    <div class="whiteOnFuscia">
+  <!--I learned that in one off situations that it is simpler to to put javascript directly in an event handler like below. The page loads whether or not you respond Please tell me if this is so?-->
+  <body style="height: 100%">
+    <div class="container">
+      <div class="row">
+    <div class=" col whiteOnFuscia">
       <h1>Click below to begin the codeQuiz</h1>
-      <button id="startquiz" class="dbDrBtn" onclick="startQuiz()">Start Quiz</button>
-      <hr style="color: skyblue; border-top: 1px dotted skyblue; width: 25%;"/>
-      <hr style="color: fuchsia; border-top: 1px dashed fuchsia; width: 50%;"/>
-      <hr style="color: midnightblue; border: 1px solid midnightblue; width: 75%;"/>
+      <button id="startquiz" class="dbDrBtn" onclick="startQuiz()">
+        Start Quiz
+      </button>
+      <hr style="color: skyblue; border-top: 1px dotted skyblue; width: 25%" />
+      <hr style="color: fuchsia; border-top: 1px dashed fuchsia; width: 50%" />
+      <hr
+        style="color: midnightblue; border: 1px solid midnightblue; width: 75%"
+      />
     </div>
-
-    <div class="cyanOnFusciaOnIndigo">
+      </div>
+<div class="row">
+    <div class="col cyanOnFusciaOnIndigo">
       <p id="question">Press "Start Quiz" to start answering questions!</p>
       <p id="timer">Time Remaining: 0</p>
 
@@ -41,32 +48,43 @@
       <input type="radio" class="answer" name="answer" value="question4" />
       <label id="q4">Answer 4</label> <br />
 
-      <button class = "dbDrBtn"; onclick="answer()">Submit Answer</button>
+      <button class="dbDrBtn" ; onclick="answer()">Submit Answer</button>
+      <hr
+        style="color: white; border: 1px solid white; width: 75%"
+      />
+      <hr style="color: fuchsia; border-top: 1px dashed fuchsia; width: 50%" />
+      <hr style="color: skyblue; border-top: 1px dotted skyblue; width: 25%" />
+      <table class="kidCenter" border="1" id="scoreTable">
     </div>
-
-    <div class="whiteOnFuscia adultCenter">
+</div>
+<div class="row justify-content-center">
+    <div class="col whiteOnFuscia adultCenter">
       <h2>High Scores:</h2>
 
       <label id="score">Your Score: 0</label>
       <br />
       Initials:
       <input type="text" name="initials" id="initials" />
-      <button class = "dbDrBtn"; onclick="submitScore()">Submit</button>
-
-      <table class = "kidCenter" border="1" id="scoreTable">
+      <button class="dbDrBtn" ; onclick="submitScore()">Submit</button>
+      <div class="justify-content-center">
         <tr>
           <th>Initials</th>
           <th>Score</th>
         </tr>
       </table>
     </div>
+    </div>
+</div>
+    </div>
     <footer class="footer mt-auto py-3">
       <div class="container d-flex justify-content-center">
-          <!--sticky footer-->
-          <span align="center" ; class="text-muted">&copy; 2020 Steven Jones</span>
-          <!--&copy is used to create the copywrite symbol-->
+        <!--sticky footer-->
+        <span align="center" ; class="text-muted"
+          >&copy; 2020 Steven Jones</span
+        >
+        <!--&copy is used to create the copywrite symbol-->
       </div>
-  </footer>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

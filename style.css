@@ -16,7 +16,6 @@ body {
   padding: 0;
 }
 
-
 .dbDrBtn {
   color: midnightblue;
   background-color: #c71585;
@@ -41,16 +40,19 @@ body {
 }
 
 /* .using a parent element to wrap around a child so i can use place items:center  */
-.adultCenter{
+.adultCenter {
   width: 100%;
   display: grid;
   place-items: center;
-
 }
 /* .using a child element to go inside a parent so i can use place items:center and fix my table which was pushed far left */
-.kidCenter{
-width: 75%;
-height: 40px;
-line-height: 40px;
-text-align: center;
+.kidCenter {
+  width: 75%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
 }
