@@ -10,6 +10,14 @@ body {
   text-align: center;
   font-family: Gill Sans Extrabold, sans-serif;
 }
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  font-size: 60px;
+  text-shadow: 3px 3px midnightblue;
+}
 .wrapper {
   height: 100%;
   margin: 0;
@@ -39,6 +47,10 @@ body {
   padding: 30px 40px;
 }
 
+.fuchsia-shadow {
+  text-shadow: 1px 1px #c71585;
+  font-size: 30px;
+}
 /* .using a parent element to wrap around a child so i can use place items:center  */
 .adultCenter {
   width: 100%;
@@ -51,8 +63,4 @@ body {
   height: 40px;
   line-height: 40px;
   text-align: center;
-}
-table {
-  margin-left: auto;
-  margin-right: auto;
 }
