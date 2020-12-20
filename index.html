@@ -21,9 +21,9 @@
   <body style="height: 100%">
     <div class="container">
       <div class="row">
-    <div class=" col whiteOnFuscia">
-      <h1>Click below to begin the codeQuiz</h1>
-      <button id="startquiz" class="dbDrBtn" onclick="startQuiz()">
+    <div class="col lightBlueOnWhite">
+      <h1 class="fusciaShadow sixtyPixels">Click below to begin the codeQuiz</h1>
+      <button id="startquiz" class="fusciaOnBlueBtn" onclick="startQuiz()">
         Start Quiz
       </button>
       <hr style="color: skyblue; border-top: 1px dotted skyblue; width: 25%" />
@@ -34,8 +34,8 @@
     </div>
       </div>
 <div class="row">
-    <div class="col cyanOnFusciaOnIndigo">
-      <p class="fuchsia-shadow" id="question">Press "Start Quiz" to start answering questions!</p>
+    <div class="col whiteFusciaBlueGradient">
+      <p class="midnightBlueShadow" id="question">Press "Start Quiz" to start answering questions!</p>
       <p id="timer">Time Remaining: 0</p>
 
       <label id="questionNum"></label> <br />
@@ -48,26 +48,26 @@
       <input type="radio" class="answer" name="answer" value="question4" />
       <label id="q4">Answer 4</label> <br />
 
-      <button class="dbDrBtn" ; onclick="answer()">Submit Answer</button>
+      <button class="fusciaOnBlueBtn" ; onclick="answer()">Submit Answer</button>
       <hr
         style="color: white; border: 1px solid white; width: 75%"
       />
-      <hr style="color: fuchsia; border-top: 1px dashed fuchsia; width: 50%" />
+      <hr style="color: midnightblue; border-top: 1px dashed midnightblue; width: 50%" />
       <hr style="color: skyblue; border-top: 1px dotted skyblue; width: 25%" />
       <table class="kidCenter" border="1" id="scoreTable">
     </div>
 </div>
 <div class="row justify-content-center">
-    <div class="col whiteOnFuscia adultCenter">
+    <div class="col lightBlueOnWhite fusciaShadow adultCenter">
       <h3>High Scores:</h3>
 
       <label id="score">Your Score: 0</label>
       <br />
       Initials:
       <input type="text" name="initials" id="initials" />
-      <button class="dbDrBtn" ; onclick="submitScore()">Submit</button>
-      <div class="justify-content-center">
-        <tr>
+      <button class="fusciaOnBlueBtn" onclick="submitScore()">Submit</button>
+      <div class="fusciaShadow justify-content-center">
+        <tr class="fusciaShadow">
           <th>Initials</th>
           <th>Score</th>
         </tr>
@@ -76,10 +76,10 @@
     </div>
 </div>
     </div>
-    <footer class="footer mt-auto py-3">
+    <footer class="mt-auto py-3">
       <div class="container d-flex justify-content-center">
         <!--sticky footer-->
-        <span align="center" ; class="text-muted"
+        <span align="center" class="colorFuscia"
           >&copy; 2020 Steven Jones</span
         >
         <!--&copy is used to create the copywrite symbol-->

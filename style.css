@@ -14,23 +14,33 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-h1 {
+
+.sixtyPixels {
   font-size: 60px;
-  text-shadow: 3px 3px midnightblue;
 }
+
+.fusciaShadow {
+  text-shadow: 1px 1px #c71585;
+}
+
+.colorFuscia {
+  color: #c71585;
+}
+
 .wrapper {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.dbDrBtn {
-  color: midnightblue;
-  background-color: #c71585;
-}
-.cyanOnFusciaOnIndigo {
-  color: rgb(34, 153, 233);
+.fusciaOnBlueBtn {
+  color: #c71585;
   background-color: midnightblue;
+}
+
+.whiteFusciaBlueGradient {
+  color: rgb(34, 153, 233);
+  background: linear-gradient(white, #c71585, midnightblue);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   font-size: 18px;
   margin: 0 auto;
@@ -38,7 +48,7 @@ h1 {
   padding: 30px 40px;
 }
 /* removed the margin because it adversely affected the table */
-.whiteOnFuscia {
+.lightBlueOnWhite {
   color: rgb(34, 153, 233);
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -47,8 +57,8 @@ h1 {
   padding: 30px 40px;
 }
 
-.fuchsia-shadow {
-  text-shadow: 1px 1px #c71585;
+.midnightBlueShadow {
+  text-shadow: 1px 1px midnightblue;
   font-size: 30px;
 }
 /* .using a parent element to wrap around a child so i can use place items:center  */
