@@ -35,7 +35,7 @@ table {
 
 .fusciaOnBlueBtn {
   color: #c71585;
-  background-color: midnightblue;
+  background: linear-gradient(white, midnightblue);
 }
 
 .whiteFusciaBlueGradient {
