@@ -40,7 +40,7 @@ table {
 
 .whiteFusciaBlueGradient {
   color: rgb(34, 153, 233);
-  background: linear-gradient(white, #c71585, midnightblue);
+  background: linear-gradient(white 10%, #c71585, midnightblue);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   font-size: 18px;
   margin: 0 auto;
