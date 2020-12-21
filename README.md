@@ -1,5 +1,4 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/
-stevensjones/codeQuizFourthEdition)
+![GitHub repo size](https://img.shields.io/github/repo-size/stevensjones/codeQuizFourthEdition)
 # Title:
 > codeQuizFourthEdition
 ## description: 
