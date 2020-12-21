@@ -17,14 +17,12 @@
 - [Further Contact](#FurtherContact)
 ## Prerequisites:
 > All you need to run this application is an internet connection and the browser of your choice.  
-## Usage:
-> Anybody that would like to test their knowledge of code related information can initiate the code quiz and do so.
 ## Tests:
 > None
 ## Contributing:
 > Steven Jones
 ## Usage:
-> 
+> Anybody that would like to test their knowledge of code related information can initiate the code quiz and do so.
 ## License
 > © 2020 Steven Jones. All Rights Reserved
 ## Further Contact:
