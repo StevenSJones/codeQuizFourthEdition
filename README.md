@@ -5,7 +5,7 @@
 > This browser application; which features responsive interface adaptation and dynamically updated HTML and CSS powered by JavaScript code, presents the user with a timed code quiz pertaining of multiple-choice questions.
 >
 >
-## Table of Contents:
+## Table Of Contents:
 - [title](#Title)
 - [description](#Description)
 - [Table Of Contents](#TableOfContents)
