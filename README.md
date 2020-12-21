@@ -3,11 +3,12 @@
 > codeQuizFourthEdition
 ## Description: 
 > This browser application; which features responsive interface adaptation and dynamically updated HTML and CSS powered by JavaScript code, presents the user with a timed code quiz pertaining of multiple-choice questions.
->
->
+> Deployed version:  https://stevensjones.github.io/codeQuizFourthEdition/
+
+>![Screen Shot 2020-12-21 at 12 28 49 PM](https://user-images.githubusercontent.com/56704209/102815725-0c8c4800-438a-11eb-8945-62e92ace1dbd.png)
 ## Table Of Contents:
-- [title](#Title)
-- [description](#Description)
+- [Title](#Title)
+- [Description](#Description)
 - [Table Of Contents](#TableOfContents)
 - [Prerequisites](#Prerequisites)
 - [Tests](#Tests)
@@ -30,7 +31,6 @@
 
 > TODOS: Include in USAGE --- 1)The URL of the deployed application. 2)The screenshot of the finished application in an assets dir. See below and erase below when done.
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
 
 
 
