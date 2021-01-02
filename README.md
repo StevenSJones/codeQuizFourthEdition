@@ -29,8 +29,6 @@
 ## Further Contact:
 > Feel free to reach out to me with questions involving this project on GITHUB at : [stevensjones](https://github.com/stevensjones);
 
-> TODOS: Include in USAGE --- 1)The URL of the deployed application. 2)The screenshot of the finished application in an assets dir. See below and erase below when done.
-
 
 
 
